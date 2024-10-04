@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us - Smart Complaint Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .contact-info {
+            margin-top: 20px;
+            color: #555;
+            font-size: 14px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us - Smart Complaint Portal</h1>
+    </header>
+
+    <div class="container">
+        <h2>We're Here to Help!</h2>
+        <p>If you have any questions, issues, or need assistance with the Smart Complaint Portal, please don't hesitate to reach out to us using the form below or through our contact information.</p>
+
+        <form action="/submit-contact" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Other Contact Methods</h3>
+            <p><strong>Email:</strong> <a href="mailto:support@citk.ac.in">support@citk.ac.in</a></p>
+            <p><strong>Phone:</strong> +91 12345 67890</p>
+            <p><strong>Address:</strong> Central Institute of Technology Kokrajhar,<br> Kokrajhar, Assam, India, PIN - 783370</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Smart Complaint Portal, Central Institute of Technology Kokrajhar. <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
